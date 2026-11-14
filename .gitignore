@@ -1,0 +1,19 @@
+# Python
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.venv/
+venv/
+
+# OS / editors
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# secrets and the separately-owned LLM evaluator harness (it holds the API key): never commit
+.env
+.env.*
+*.key
+/AG Cuckoo Very new/
+evaluate.py

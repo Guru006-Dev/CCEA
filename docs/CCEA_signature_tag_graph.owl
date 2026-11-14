@@ -1,0 +1,1279 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF
+   xmlns:ccea="http://example.org/ccea-tags#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+>
+  <rdf:Description rdf:about="http://example.org/ccea-tags#stealth_system_procname">
+    <rdf:type rdf:resource="http://example.org/ccea-tags#Signature"/>
+    <rdfs:label>stealth_system_procname</rdfs:label>
+    <ccea:inSwapPool rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</ccea:inSwapPool>
+    <ccea:hasTag rdf:resource="http://example.org/ccea-tags#T1036"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ccea-tags#ransomware_files">
+    <rdf:type rdf:resource="http://example.org/ccea-tags#Signature"/>
+    <rdfs:label>ransomware_files</rdfs:label>
+    <ccea:inSwapPool rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</ccea:inSwapPool>
+    <ccea:hasTag rdf:resource="http://example.org/ccea-tags#C0016"/>
+    <ccea:hasTag rdf:resource="http://example.org/ccea-tags#E1486"/>
+    <ccea:relatedTo rdf:resource="http://example.org/ccea-tags#creates_doc"/>
+    <ccea:relatedTo rdf:resource="http://example.org/ccea-tags#ransomware_extensions"/>
+    <ccea:relatedTo rdf:resource="http://example.org/ccea-tags#ransomware_file_moves"/>
+    <ccea:relatedTo rdf:resource="http://example.org/ccea-tags#ransomware_appends_extensions"/>
+    <ccea:relatedTo rdf:resource="http://example.org/ccea-tags#ransomware_dropped_files"/>
+    <ccea:relatedTo rdf:resource="http://example.org/ccea-tags#ransomware_message"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ccea-tags#Obj_Anti_Behavioral_Analysis">
+    <rdf:type rdf:resource="http://example.org/ccea-tags#Objective"/>
+    <rdfs:label>Anti Behavioral Analysis</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ccea-tags#malicious_document_urls">
+    <rdf:type rdf:resource="http://example.org/ccea-tags#Signature"/>
+    <rdfs:label>malicious_document_urls</rdfs:label>
+    <ccea:inSwapPool rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</ccea:inSwapPool>
+    <ccea:hasTag rdf:resource="http://example.org/ccea-tags#B0023"/>
+    <ccea:hasTag rdf:resource="http://example.org/ccea-tags#E1059"/>
+    <ccea:relatedTo rdf:resource="http://example.org/ccea-tags#creates_exe"/>
+    <ccea:relatedTo rdf:resource="http://example.org/ccea-tags#exe_appdata"/>
+    <ccea:relatedTo rdf:resource="http://example.org/ccea-tags#dropper"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ccea-tags#disables_system_restore">
+    <rdf:type rdf:resource="http://example.org/ccea-tags#Signature"/>
+    <rdfs:label>disables_system_restore</rdfs:label>
+    <ccea:inSwapPool rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</ccea:inSwapPool>
+    <ccea:hasTag rdf:resource="http://example.org/ccea-tags#E1112"/>
+    <ccea:hasTag rdf:resource="http://example.org/ccea-tags#T1112"/>
+    <ccea:hasTag rdf:resource="http://example.org/ccea-tags#T1490"/>
+    <ccea:relatedTo rdf:resource="http://example.org/ccea-tags#locker_taskmgr"/>
+    <ccea:relatedTo rdf:resource="http://example.org/ccea-tags#ransomware_shadowcopy"/>
+    <ccea:relatedTo rdf:resource="http://example.org/ccea-tags#stealth_hiddenfile"/>
+    <ccea:relatedTo rdf:resource="http://example.org/ccea-tags#disables_security"/>
+    <ccea:relatedTo rdf:resource="http://example.org/ccea-tags#stealth_hidden_extension"/>
+    <ccea:relatedTo rdf:resource="http://example.org/ccea-tags#ransomware_bcdedit"/>
+    <ccea:relatedTo rdf:resource="http://example.org/ccea-tags#persistence_autorun"/>
+    <ccea:relatedTo rdf:resource="http://example.org/ccea-tags#modifies_desktop_wallpaper"/>
+    <ccea:relatedTo rdf:resource="http://example.org/ccea-tags#disables_proxy"/>
+    <ccea:relatedTo rdf:resource="http://example.org/ccea-tags#modify_uac_prompt"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ccea-tags#stealth_hidden_extension">
+    <rdf:type rdf:resource="http://example.org/ccea-tags#Signature"/>
+    <rdfs:label>stealth_hidden_extension</rdfs:label>
+    <ccea:inSwapPool rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</ccea:inSwapPool>
+    <ccea:hasTag rdf:resource="http://example.org/ccea-tags#E1112"/>
+    <ccea:hasTag rdf:resource="http://example.org/ccea-tags#T1054"/>
+    <ccea:hasTag rdf:resource="http://example.org/ccea-tags#T1158"/>
+    <ccea:relatedTo rdf:resource="http://example.org/ccea-tags#persistence_autorun"/>
+    <ccea:relatedTo rdf:resource="http://example.org/ccea-tags#modifies_desktop_wallpaper"/>
+    <ccea:relatedTo rdf:resource="http://example.org/ccea-tags#creates_hidden_file"/>
+    <ccea:relatedTo rdf:resource="http://example.org/ccea-tags#locker_taskmgr"/>
+    <ccea:relatedTo rdf:resource="http://example.org/ccea-tags#disables_system_restore"/>
+    <ccea:relatedTo rdf:resource="http://example.org/ccea-tags#stealth_hiddenfile"/>
+    <ccea:relatedTo rdf:resource="http://example.org/ccea-tags#disables_proxy"/>
+    <ccea:relatedTo rdf:resource="http://example.org/ccea-tags#modify_uac_prompt"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ccea-tags#volatility_svcscan_3">
+    <rdf:type rdf:resource="http://example.org/ccea-tags#Signature"/>
+    <rdfs:label>volatility_svcscan_3</rdfs:label>
+    <ccea:inSwapPool rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</ccea:inSwapPool>
+    <ccea:hasTag rdf:resource="http://example.org/ccea-tags#F0004"/>
+    <ccea:hasTag rdf:resource="http://example.org/ccea-tags#T1031"/>
+    <ccea:relatedTo rdf:resource="http://example.org/ccea-tags#antiav_servicestop"/>
+    <ccea:relatedTo rdf:resource="http://example.org/ccea-tags#disables_proxy"/>
+    <ccea:relatedTo rdf:resource="http://example.org/ccea-tags#bypass_firewall"/>
+    <ccea:relatedTo rdf:resource="http://example.org/ccea-tags#volatility_svcscan_1"/>
+    <ccea:relatedTo rdf:resource="http://example.org/ccea-tags#disables_security"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ccea-tags#antivm_disk_size">
+    <rdf:type rdf:resource="http://example.org/ccea-tags#Signature"/>
+    <rdfs:label>antivm_disk_size</rdfs:label>
+    <ccea:inSwapPool rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</ccea:inSwapPool>
+    <ccea:hasTag rdf:resource="http://example.org/ccea-tags#B0009"/>
+    <ccea:relatedTo rdf:resource="http://example.org/ccea-tags#antivm_vmware_in_instruction"/>
+    <ccea:relatedTo rdf:resource="http://example.org/ccea-tags#antivm_memory_available"/>
+    <ccea:relatedTo rdf:resource="http://example.org/ccea-tags#wmi_antivm"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ccea-tags#bypass_firewall">
+    <rdf:type rdf:resource="http://example.org/ccea-tags#Signature"/>
+    <rdfs:label>bypass_firewall</rdfs:label>
+    <ccea:inSwapPool rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</ccea:inSwapPool>
+    <ccea:hasTag rdf:resource="http://example.org/ccea-tags#F0004"/>
+    <ccea:hasTag rdf:resource="http://example.org/ccea-tags#T1031"/>
+    <ccea:relatedTo rdf:resource="http://example.org/ccea-tags#volatility_svcscan_3"/>
+    <ccea:relatedTo rdf:resource="http://example.org/ccea-tags#antiav_servicestop"/>
+    <ccea:relatedTo rdf:resource="http://example.org/ccea-tags#disables_proxy"/>
+    <ccea:relatedTo rdf:resource="http://example.org/ccea-tags#volatility_svcscan_1"/>
+    <ccea:relatedTo rdf:resource="http://example.org/ccea-tags#disables_security"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ccea-tags#disables_proxy">
+    <rdf:type rdf:resource="http://example.org/ccea-tags#Signature"/>
+    <rdfs:label>disables_proxy</rdfs:label>
+    <ccea:inSwapPool rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</ccea:inSwapPool>
+    <ccea:hasTag rdf:resource="http://example.org/ccea-tags#E1112"/>
+    <ccea:hasTag rdf:resource="http://example.org/ccea-tags#F0004"/>
+    <ccea:hasTag rdf:resource="http://example.org/ccea-tags#T1040"/>
+    <ccea:relatedTo rdf:resource="http://example.org/ccea-tags#volatility_svcscan_3"/>
+    <ccea:relatedTo rdf:resource="http://example.org/ccea-tags#bypass_firewall"/>
+    <ccea:relatedTo rdf:resource="http://example.org/ccea-tags#volatility_svcscan_1"/>
+    <ccea:relatedTo rdf:resource="http://example.org/ccea-tags#stealth_hiddenfile"/>
+    <ccea:relatedTo rdf:resource="http://example.org/ccea-tags#disables_security"/>
+    <ccea:relatedTo rdf:resource="http://example.org/ccea-tags#antiav_servicestop"/>
+    <ccea:relatedTo rdf:resource="http://example.org/ccea-tags#modify_uac_prompt"/>
+    <ccea:relatedTo rdf:resource="http://example.org/ccea-tags#locker_taskmgr"/>
+    <ccea:relatedTo rdf:resource="http://example.org/ccea-tags#persistence_autorun"/>
+    <ccea:relatedTo rdf:resource="http://example.org/ccea-tags#modifies_desktop_wallpaper"/>
+    <ccea:relatedTo rdf:resource="http://example.org/ccea-tags#disables_system_restore"/>
+    <ccea:relatedTo rdf:resource="http://example.org/ccea-tags#stealth_hidden_extension"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ccea-tags#persistence_autorun">
+    <rdf:type rdf:resource="http://example.org/ccea-tags#Signature"/>
+    <rdfs:label>persistence_autorun</rdfs:label>
+    <ccea:inSwapPool rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</ccea:inSwapPool>
+    <ccea:hasTag rdf:resource="http://example.org/ccea-tags#E1112"/>
+    <ccea:hasTag rdf:resource="http://example.org/ccea-tags#F0012"/>
+    <ccea:hasTag rdf:resource="http://example.org/ccea-tags#T1053"/>
+    <ccea:hasTag rdf:resource="http://example.org/ccea-tags#T1060"/>
+    <ccea:hasTag rdf:resource="http://example.org/ccea-tags#T1543"/>
+    <ccea:relatedTo rdf:resource="http://example.org/ccea-tags#stealth_hiddenfile"/>
+    <ccea:relatedTo rdf:resource="http://example.org/ccea-tags#stealth_hidden_extension"/>
+    <ccea:relatedTo rdf:resource="http://example.org/ccea-tags#uses_windows_utilities"/>
+    <ccea:relatedTo rdf:resource="http://example.org/ccea-tags#modify_uac_prompt"/>
+    <ccea:relatedTo rdf:resource="http://example.org/ccea-tags#modifies_desktop_wallpaper"/>
+    <ccea:relatedTo rdf:resource="http://example.org/ccea-tags#disables_proxy"/>
+    <ccea:relatedTo rdf:resource="http://example.org/ccea-tags#locker_taskmgr"/>
+    <ccea:relatedTo rdf:resource="http://example.org/ccea-tags#disables_system_restore"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ccea-tags#stealth_hiddenfile">
+    <rdf:type rdf:resource="http://example.org/ccea-tags#Signature"/>
+    <rdfs:label>stealth_hiddenfile</rdfs:label>
+    <ccea:inSwapPool rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</ccea:inSwapPool>
+    <ccea:hasTag rdf:resource="http://example.org/ccea-tags#E1112"/>
+    <ccea:hasTag rdf:resource="http://example.org/ccea-tags#T1054"/>
+    <ccea:hasTag rdf:resource="http://example.org/ccea-tags#T1158"/>
+    <ccea:relatedTo rdf:resource="http://example.org/ccea-tags#stealth_hidden_extension"/>
+    <ccea:relatedTo rdf:resource="http://example.org/ccea-tags#modify_uac_prompt"/>
+    <ccea:relatedTo rdf:resource="http://example.org/ccea-tags#persistence_autorun"/>
+    <ccea:relatedTo rdf:resource="http://example.org/ccea-tags#modifies_desktop_wallpaper"/>
+    <ccea:relatedTo rdf:resource="http://example.org/ccea-tags#creates_hidden_file"/>
+    <ccea:relatedTo rdf:resource="http://example.org/ccea-tags#disables_proxy"/>
+    <ccea:relatedTo rdf:resource="http://example.org/ccea-tags#locker_taskmgr"/>
+    <ccea:relatedTo rdf:resource="http://example.org/ccea-tags#disables_system_restore"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ccea-tags#antivm_memory_available">
+    <rdf:type rdf:resource="http://example.org/ccea-tags#Signature"/>
+    <rdfs:label>antivm_memory_available</rdfs:label>
+    <ccea:inSwapPool rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</ccea:inSwapPool>
+    <ccea:hasTag rdf:resource="http://example.org/ccea-tags#B0009"/>
+    <ccea:hasTag rdf:resource="http://example.org/ccea-tags#T1082"/>
+    <ccea:relatedTo rdf:resource="http://example.org/ccea-tags#antivm_vmware_in_instruction"/>
+    <ccea:relatedTo rdf:resource="http://example.org/ccea-tags#wmi_antivm"/>
+    <ccea:relatedTo rdf:resource="http://example.org/ccea-tags#raises_exception"/>
+    <ccea:relatedTo rdf:resource="http://example.org/ccea-tags#antivm_disk_size"/>
+    <ccea:relatedTo rdf:resource="http://example.org/ccea-tags#reads_user_agent"/>
+    <ccea:relatedTo rdf:resource="http://example.org/ccea-tags#recon_fingerprint"/>
+    <ccea:relatedTo rdf:resource="http://example.org/ccea-tags#applcation_raises_exception"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ccea-tags#disables_security">
+    <rdf:type rdf:resource="http://example.org/ccea-tags#Signature"/>
+    <rdfs:label>disables_security</rdfs:label>
+    <ccea:inSwapPool rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</ccea:inSwapPool>
+    <ccea:hasTag rdf:resource="http://example.org/ccea-tags#F0004"/>
+    <ccea:hasTag rdf:resource="http://example.org/ccea-tags#T1089"/>
+    <ccea:hasTag rdf:resource="http://example.org/ccea-tags#T1112"/>
+    <ccea:relatedTo rdf:resource="http://example.org/ccea-tags#volatility_svcscan_3"/>
+    <ccea:relatedTo rdf:resource="http://example.org/ccea-tags#bypass_firewall"/>
+    <ccea:relatedTo rdf:resource="http://example.org/ccea-tags#modifies_firefox_configuration"/>
+    <ccea:relatedTo rdf:resource="http://example.org/ccea-tags#volatility_svcscan_1"/>
+    <ccea:relatedTo rdf:resource="http://example.org/ccea-tags#disables_proxy"/>
+    <ccea:relatedTo rdf:resource="http://example.org/ccea-tags#antiav_servicestop"/>
+    <ccea:relatedTo rdf:resource="http://example.org/ccea-tags#locker_taskmgr"/>
+    <ccea:relatedTo rdf:resource="http://example.org/ccea-tags#disables_system_restore"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ccea-tags#C0017">
+    <rdf:type rdf:resource="http://example.org/ccea-tags#MBCTag"/>
+    <rdfs:label>C0017 Create Process</rdfs:label>
+    <ccea:belongsToObjective rdf:resource="http://example.org/ccea-tags#Obj_Micro_behavior"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ccea-tags#has_wmi">
+    <rdf:type rdf:resource="http://example.org/ccea-tags#Signature"/>
+    <rdfs:label>has_wmi</rdfs:label>
+    <ccea:inSwapPool rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</ccea:inSwapPool>
+    <ccea:hasTag rdf:resource="http://example.org/ccea-tags#T1047"/>
+    <ccea:relatedTo rdf:resource="http://example.org/ccea-tags#wmi_antivm"/>
+    <ccea:relatedTo rdf:resource="http://example.org/ccea-tags#ransomware_bcdedit"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ccea-tags#modifies_firefox_configuration">
+    <rdf:type rdf:resource="http://example.org/ccea-tags#Signature"/>
+    <rdfs:label>modifies_firefox_configuration</rdfs:label>
+    <ccea:inSwapPool rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</ccea:inSwapPool>
+    <ccea:hasTag rdf:resource="http://example.org/ccea-tags#T1089"/>
+    <ccea:relatedTo rdf:resource="http://example.org/ccea-tags#disables_security"/>
+    <ccea:relatedTo rdf:resource="http://example.org/ccea-tags#antiav_servicestop"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ccea-tags#raises_exception">
+    <rdf:type rdf:resource="http://example.org/ccea-tags#Signature"/>
+    <rdfs:label>raises_exception</rdfs:label>
+    <ccea:inSwapPool rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</ccea:inSwapPool>
+    <ccea:hasTag rdf:resource="http://example.org/ccea-tags#T1082"/>
+    <ccea:relatedTo rdf:resource="http://example.org/ccea-tags#antivm_memory_available"/>
+    <ccea:relatedTo rdf:resource="http://example.org/ccea-tags#reads_user_agent"/>
+    <ccea:relatedTo rdf:resource="http://example.org/ccea-tags#recon_fingerprint"/>
+    <ccea:relatedTo rdf:resource="http://example.org/ccea-tags#applcation_raises_exception"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ccea-tags#sysinternals_tools_usage">
+    <rdf:type rdf:resource="http://example.org/ccea-tags#Signature"/>
+    <rdfs:label>sysinternals_tools_usage</rdfs:label>
+    <ccea:inSwapPool rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</ccea:inSwapPool>
+    <ccea:hasTag rdf:resource="http://example.org/ccea-tags#E1203"/>
+    <ccea:relatedTo rdf:resource="http://example.org/ccea-tags#suspicious_command_tools"/>
+    <ccea:relatedTo rdf:resource="http://example.org/ccea-tags#office_vuln_modules"/>
+    <ccea:relatedTo rdf:resource="http://example.org/ccea-tags#uses_windows_utilities"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ccea-tags#ransomware_file_moves">
+    <rdf:type rdf:resource="http://example.org/ccea-tags#Signature"/>
+    <rdfs:label>ransomware_file_moves</rdfs:label>
+    <ccea:inSwapPool rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</ccea:inSwapPool>
+    <ccea:hasTag rdf:resource="http://example.org/ccea-tags#E1486"/>
+    <ccea:relatedTo rdf:resource="http://example.org/ccea-tags#ransomware_files"/>
+    <ccea:relatedTo rdf:resource="http://example.org/ccea-tags#ransomware_appends_extensions"/>
+    <ccea:relatedTo rdf:resource="http://example.org/ccea-tags#ransomware_dropped_files"/>
+    <ccea:relatedTo rdf:resource="http://example.org/ccea-tags#ransomware_message"/>
+    <ccea:relatedTo rdf:resource="http://example.org/ccea-tags#ransomware_extensions"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ccea-tags#T1057">
+    <rdf:type rdf:resource="http://example.org/ccea-tags#ATTCKTag"/>
+    <rdfs:label>T1057 Process Discovery</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ccea-tags#E1486">
+    <rdf:type rdf:resource="http://example.org/ccea-tags#MBCTag"/>
+    <rdfs:label>E1486 Data Encrypted for Impact</rdfs:label>
+    <ccea:belongsToObjective rdf:resource="http://example.org/ccea-tags#Obj_Impact"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ccea-tags#F0001">
+    <rdf:type rdf:resource="http://example.org/ccea-tags#MBCTag"/>
+    <rdfs:label>F0001 Software Packing</rdfs:label>
+    <ccea:belongsToObjective rdf:resource="http://example.org/ccea-tags#Obj_Anti_Static_Analysis"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ccea-tags#injection_createremotethread">
+    <rdf:type rdf:resource="http://example.org/ccea-tags#Signature"/>
+    <rdfs:label>injection_createremotethread</rdfs:label>
+    <ccea:inSwapPool rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</ccea:inSwapPool>
+    <ccea:hasTag rdf:resource="http://example.org/ccea-tags#E1055"/>
+    <ccea:hasTag rdf:resource="http://example.org/ccea-tags#T1055"/>
+    <ccea:relatedTo rdf:resource="http://example.org/ccea-tags#injection_ntsetcontextthread"/>
+    <ccea:relatedTo rdf:resource="http://example.org/ccea-tags#injection_write_memory_exe"/>
+    <ccea:relatedTo rdf:resource="http://example.org/ccea-tags#volatility_malfind_2"/>
+    <ccea:relatedTo rdf:resource="http://example.org/ccea-tags#injection_write_memory"/>
+    <ccea:relatedTo rdf:resource="http://example.org/ccea-tags#injection_modifies_memory"/>
+    <ccea:relatedTo rdf:resource="http://example.org/ccea-tags#volatility_ldrmodules_1"/>
+    <ccea:relatedTo rdf:resource="http://example.org/ccea-tags#allocates_execute_remote_process"/>
+    <ccea:relatedTo rdf:resource="http://example.org/ccea-tags#volatility_handles_1"/>
+    <ccea:relatedTo rdf:resource="http://example.org/ccea-tags#injection_runpe"/>
+    <ccea:relatedTo rdf:resource="http://example.org/ccea-tags#injection_resumethread"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ccea-tags#injection_ntsetcontextthread">
+    <rdf:type rdf:resource="http://example.org/ccea-tags#Signature"/>
+    <rdfs:label>injection_ntsetcontextthread</rdfs:label>
+    <ccea:inSwapPool rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</ccea:inSwapPool>
+    <ccea:hasTag rdf:resource="http://example.org/ccea-tags#E1055"/>
+    <ccea:relatedTo rdf:resource="http://example.org/ccea-tags#injection_createremotethread"/>
+    <ccea:relatedTo rdf:resource="http://example.org/ccea-tags#volatility_ldrmodules_1"/>
+    <ccea:relatedTo rdf:resource="http://example.org/ccea-tags#allocates_execute_remote_process"/>
+    <ccea:relatedTo rdf:resource="http://example.org/ccea-tags#volatility_handles_1"/>
+    <ccea:relatedTo rdf:resource="http://example.org/ccea-tags#injection_write_memory"/>
+    <ccea:relatedTo rdf:resource="http://example.org/ccea-tags#injection_runpe"/>
+    <ccea:relatedTo rdf:resource="http://example.org/ccea-tags#injection_resumethread"/>
+    <ccea:relatedTo rdf:resource="http://example.org/ccea-tags#injection_modifies_memory"/>
+    <ccea:relatedTo rdf:resource="http://example.org/ccea-tags#injection_write_memory_exe"/>
+    <ccea:relatedTo rdf:resource="http://example.org/ccea-tags#volatility_malfind_2"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ccea-tags#volatility_handles_1">
+    <rdf:type rdf:resource="http://example.org/ccea-tags#Signature"/>
+    <rdfs:label>volatility_handles_1</rdfs:label>
+    <ccea:inSwapPool rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</ccea:inSwapPool>
+    <ccea:hasTag rdf:resource="http://example.org/ccea-tags#E1055"/>
+    <ccea:hasTag rdf:resource="http://example.org/ccea-tags#T1055"/>
+    <ccea:relatedTo rdf:resource="http://example.org/ccea-tags#injection_createremotethread"/>
+    <ccea:relatedTo rdf:resource="http://example.org/ccea-tags#volatility_ldrmodules_1"/>
+    <ccea:relatedTo rdf:resource="http://example.org/ccea-tags#allocates_execute_remote_process"/>
+    <ccea:relatedTo rdf:resource="http://example.org/ccea-tags#injection_write_memory"/>
+    <ccea:relatedTo rdf:resource="http://example.org/ccea-tags#injection_runpe"/>
+    <ccea:relatedTo rdf:resource="http://example.org/ccea-tags#injection_resumethread"/>
+    <ccea:relatedTo rdf:resource="http://example.org/ccea-tags#injection_modifies_memory"/>
+    <ccea:relatedTo rdf:resource="http://example.org/ccea-tags#injection_ntsetcontextthread"/>
+    <ccea:relatedTo rdf:resource="http://example.org/ccea-tags#injection_write_memory_exe"/>
+    <ccea:relatedTo rdf:resource="http://example.org/ccea-tags#volatility_malfind_2"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ccea-tags#MBCTag">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://example.org/ccea-tags#Tag"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ccea-tags#F0013">
+    <rdf:type rdf:resource="http://example.org/ccea-tags#MBCTag"/>
+    <rdfs:label>F0013 Bootkit</rdfs:label>
+    <ccea:belongsToObjective rdf:resource="http://example.org/ccea-tags#Obj_Defense_Evasion"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ccea-tags#ransomware_dropped_files">
+    <rdf:type rdf:resource="http://example.org/ccea-tags#Signature"/>
+    <rdfs:label>ransomware_dropped_files</rdfs:label>
+    <ccea:inSwapPool rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</ccea:inSwapPool>
+    <ccea:hasTag rdf:resource="http://example.org/ccea-tags#E1486"/>
+    <ccea:relatedTo rdf:resource="http://example.org/ccea-tags#ransomware_appends_extensions"/>
+    <ccea:relatedTo rdf:resource="http://example.org/ccea-tags#ransomware_message"/>
+    <ccea:relatedTo rdf:resource="http://example.org/ccea-tags#ransomware_files"/>
+    <ccea:relatedTo rdf:resource="http://example.org/ccea-tags#ransomware_extensions"/>
+    <ccea:relatedTo rdf:resource="http://example.org/ccea-tags#ransomware_file_moves"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ccea-tags#packer_entropy">
+    <rdf:type rdf:resource="http://example.org/ccea-tags#Signature"/>
+    <rdfs:label>packer_entropy</rdfs:label>
+    <ccea:inSwapPool rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</ccea:inSwapPool>
+    <ccea:hasTag rdf:resource="http://example.org/ccea-tags#F0001"/>
+    <ccea:hasTag rdf:resource="http://example.org/ccea-tags#T1045"/>
+    <ccea:relatedTo rdf:resource="http://example.org/ccea-tags#pe_unknown_resource_name"/>
+    <ccea:relatedTo rdf:resource="http://example.org/ccea-tags#pe_features"/>
+    <ccea:relatedTo rdf:resource="http://example.org/ccea-tags#peid_packer"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ccea-tags#removes_zoneid_ads">
+    <rdf:type rdf:resource="http://example.org/ccea-tags#Signature"/>
+    <rdfs:label>removes_zoneid_ads</rdfs:label>
+    <ccea:inSwapPool rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</ccea:inSwapPool>
+    <ccea:hasTag rdf:resource="http://example.org/ccea-tags#F0007"/>
+    <ccea:hasTag rdf:resource="http://example.org/ccea-tags#T1070"/>
+    <ccea:hasTag rdf:resource="http://example.org/ccea-tags#T1096"/>
+    <ccea:relatedTo rdf:resource="http://example.org/ccea-tags#deletes_executed_files"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ccea-tags#ATTCKTag">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://example.org/ccea-tags#Tag"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ccea-tags#deletes_executed_files">
+    <rdf:type rdf:resource="http://example.org/ccea-tags#Signature"/>
+    <rdfs:label>deletes_executed_files</rdfs:label>
+    <ccea:inSwapPool rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</ccea:inSwapPool>
+    <ccea:hasTag rdf:resource="http://example.org/ccea-tags#F0007"/>
+    <ccea:hasTag rdf:resource="http://example.org/ccea-tags#T1070"/>
+    <ccea:relatedTo rdf:resource="http://example.org/ccea-tags#removes_zoneid_ads"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ccea-tags#Obj_Defense_Evasion">
+    <rdf:type rdf:resource="http://example.org/ccea-tags#Objective"/>
+    <rdfs:label>Defense Evasion</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ccea-tags#Obj_Discovery">
+    <rdf:type rdf:resource="http://example.org/ccea-tags#Objective"/>
+    <rdfs:label>Discovery</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ccea-tags#ransomware_shadowcopy">
+    <rdf:type rdf:resource="http://example.org/ccea-tags#Signature"/>
+    <rdfs:label>ransomware_shadowcopy</rdfs:label>
+    <ccea:inSwapPool rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</ccea:inSwapPool>
+    <ccea:hasTag rdf:resource="http://example.org/ccea-tags#T1490"/>
+    <ccea:relatedTo rdf:resource="http://example.org/ccea-tags#ransomware_bcdedit"/>
+    <ccea:relatedTo rdf:resource="http://example.org/ccea-tags#disables_system_restore"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ccea-tags#modifies_desktop_wallpaper">
+    <rdf:type rdf:resource="http://example.org/ccea-tags#Signature"/>
+    <rdfs:label>modifies_desktop_wallpaper</rdfs:label>
+    <ccea:inSwapPool rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</ccea:inSwapPool>
+    <ccea:hasTag rdf:resource="http://example.org/ccea-tags#E1112"/>
+    <ccea:relatedTo rdf:resource="http://example.org/ccea-tags#stealth_hiddenfile"/>
+    <ccea:relatedTo rdf:resource="http://example.org/ccea-tags#stealth_hidden_extension"/>
+    <ccea:relatedTo rdf:resource="http://example.org/ccea-tags#persistence_autorun"/>
+    <ccea:relatedTo rdf:resource="http://example.org/ccea-tags#disables_proxy"/>
+    <ccea:relatedTo rdf:resource="http://example.org/ccea-tags#modify_uac_prompt"/>
+    <ccea:relatedTo rdf:resource="http://example.org/ccea-tags#locker_taskmgr"/>
+    <ccea:relatedTo rdf:resource="http://example.org/ccea-tags#disables_system_restore"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ccea-tags#injection_resumethread">
+    <rdf:type rdf:resource="http://example.org/ccea-tags#Signature"/>
+    <rdfs:label>injection_resumethread</rdfs:label>
+    <ccea:inSwapPool rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</ccea:inSwapPool>
+    <ccea:hasTag rdf:resource="http://example.org/ccea-tags#E1055"/>
+    <ccea:relatedTo rdf:resource="http://example.org/ccea-tags#injection_ntsetcontextthread"/>
+    <ccea:relatedTo rdf:resource="http://example.org/ccea-tags#injection_write_memory_exe"/>
+    <ccea:relatedTo rdf:resource="http://example.org/ccea-tags#volatility_malfind_2"/>
+    <ccea:relatedTo rdf:resource="http://example.org/ccea-tags#injection_write_memory"/>
+    <ccea:relatedTo rdf:resource="http://example.org/ccea-tags#injection_modifies_memory"/>
+    <ccea:relatedTo rdf:resource="http://example.org/ccea-tags#injection_createremotethread"/>
+    <ccea:relatedTo rdf:resource="http://example.org/ccea-tags#volatility_ldrmodules_1"/>
+    <ccea:relatedTo rdf:resource="http://example.org/ccea-tags#allocates_execute_remote_process"/>
+    <ccea:relatedTo rdf:resource="http://example.org/ccea-tags#volatility_handles_1"/>
+    <ccea:relatedTo rdf:resource="http://example.org/ccea-tags#injection_runpe"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ccea-tags#suspicious_command_tools">
+    <rdf:type rdf:resource="http://example.org/ccea-tags#Signature"/>
+    <rdfs:label>suspicious_command_tools</rdfs:label>
+    <ccea:inSwapPool rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</ccea:inSwapPool>
+    <ccea:hasTag rdf:resource="http://example.org/ccea-tags#E1203"/>
+    <ccea:relatedTo rdf:resource="http://example.org/ccea-tags#sysinternals_tools_usage"/>
+    <ccea:relatedTo rdf:resource="http://example.org/ccea-tags#office_vuln_modules"/>
+    <ccea:relatedTo rdf:resource="http://example.org/ccea-tags#uses_windows_utilities"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ccea-tags#modify_uac_prompt">
+    <rdf:type rdf:resource="http://example.org/ccea-tags#Signature"/>
+    <rdfs:label>modify_uac_prompt</rdfs:label>
+    <ccea:inSwapPool rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</ccea:inSwapPool>
+    <ccea:hasTag rdf:resource="http://example.org/ccea-tags#E1112"/>
+    <ccea:hasTag rdf:resource="http://example.org/ccea-tags#T1088"/>
+    <ccea:hasTag rdf:resource="http://example.org/ccea-tags#T1548"/>
+    <ccea:relatedTo rdf:resource="http://example.org/ccea-tags#stealth_hiddenfile"/>
+    <ccea:relatedTo rdf:resource="http://example.org/ccea-tags#stealth_hidden_extension"/>
+    <ccea:relatedTo rdf:resource="http://example.org/ccea-tags#persistence_autorun"/>
+    <ccea:relatedTo rdf:resource="http://example.org/ccea-tags#modifies_desktop_wallpaper"/>
+    <ccea:relatedTo rdf:resource="http://example.org/ccea-tags#disables_proxy"/>
+    <ccea:relatedTo rdf:resource="http://example.org/ccea-tags#locker_taskmgr"/>
+    <ccea:relatedTo rdf:resource="http://example.org/ccea-tags#disables_system_restore"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ccea-tags#volatility_svcscan_1">
+    <rdf:type rdf:resource="http://example.org/ccea-tags#Signature"/>
+    <rdfs:label>volatility_svcscan_1</rdfs:label>
+    <ccea:inSwapPool rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</ccea:inSwapPool>
+    <ccea:hasTag rdf:resource="http://example.org/ccea-tags#F0004"/>
+    <ccea:hasTag rdf:resource="http://example.org/ccea-tags#T1031"/>
+    <ccea:relatedTo rdf:resource="http://example.org/ccea-tags#volatility_svcscan_3"/>
+    <ccea:relatedTo rdf:resource="http://example.org/ccea-tags#bypass_firewall"/>
+    <ccea:relatedTo rdf:resource="http://example.org/ccea-tags#disables_security"/>
+    <ccea:relatedTo rdf:resource="http://example.org/ccea-tags#antiav_servicestop"/>
+    <ccea:relatedTo rdf:resource="http://example.org/ccea-tags#disables_proxy"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ccea-tags#antisandbox_cuckoo_files">
+    <rdf:type rdf:resource="http://example.org/ccea-tags#Signature"/>
+    <rdfs:label>antisandbox_cuckoo_files</rdfs:label>
+    <ccea:inSwapPool rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</ccea:inSwapPool>
+    <ccea:hasTag rdf:resource="http://example.org/ccea-tags#B0007"/>
+    <ccea:hasTag rdf:resource="http://example.org/ccea-tags#T1057"/>
+    <ccea:hasTag rdf:resource="http://example.org/ccea-tags#T1083"/>
+    <ccea:relatedTo rdf:resource="http://example.org/ccea-tags#antidbg_windows"/>
+    <ccea:relatedTo rdf:resource="http://example.org/ccea-tags#antiav_detectfile"/>
+    <ccea:relatedTo rdf:resource="http://example.org/ccea-tags#injection_process_search"/>
+    <ccea:relatedTo rdf:resource="http://example.org/ccea-tags#process_interest"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ccea-tags#creates_exe">
+    <rdf:type rdf:resource="http://example.org/ccea-tags#Signature"/>
+    <rdfs:label>creates_exe</rdfs:label>
+    <ccea:inSwapPool rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</ccea:inSwapPool>
+    <ccea:hasTag rdf:resource="http://example.org/ccea-tags#B0023"/>
+    <ccea:hasTag rdf:resource="http://example.org/ccea-tags#E1105"/>
+    <ccea:hasTag rdf:resource="http://example.org/ccea-tags#T1129"/>
+    <ccea:relatedTo rdf:resource="http://example.org/ccea-tags#malicious_document_urls"/>
+    <ccea:relatedTo rdf:resource="http://example.org/ccea-tags#network_document_file"/>
+    <ccea:relatedTo rdf:resource="http://example.org/ccea-tags#exe_appdata"/>
+    <ccea:relatedTo rdf:resource="http://example.org/ccea-tags#dropper"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ccea-tags#creates_shortcut">
+    <rdf:type rdf:resource="http://example.org/ccea-tags#Signature"/>
+    <rdfs:label>creates_shortcut</rdfs:label>
+    <ccea:inSwapPool rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</ccea:inSwapPool>
+    <ccea:hasTag rdf:resource="http://example.org/ccea-tags#T1023"/>
+    <ccea:hasTag rdf:resource="http://example.org/ccea-tags#T1204"/>
+    <ccea:hasTag rdf:resource="http://example.org/ccea-tags#T1547"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ccea-tags#T1134">
+    <rdf:type rdf:resource="http://example.org/ccea-tags#ATTCKTag"/>
+    <rdfs:label>T1134 Access Token Manipulation</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ccea-tags#B0003">
+    <rdf:type rdf:resource="http://example.org/ccea-tags#MBCTag"/>
+    <rdfs:label>B0003 Dynamic Analysis Evasion</rdfs:label>
+    <ccea:belongsToObjective rdf:resource="http://example.org/ccea-tags#Obj_Anti_Behavioral_Analysis"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ccea-tags#volatility_malfind_2">
+    <rdf:type rdf:resource="http://example.org/ccea-tags#Signature"/>
+    <rdfs:label>volatility_malfind_2</rdfs:label>
+    <ccea:inSwapPool rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</ccea:inSwapPool>
+    <ccea:hasTag rdf:resource="http://example.org/ccea-tags#E1055"/>
+    <ccea:hasTag rdf:resource="http://example.org/ccea-tags#T1055"/>
+    <ccea:relatedTo rdf:resource="http://example.org/ccea-tags#injection_write_memory"/>
+    <ccea:relatedTo rdf:resource="http://example.org/ccea-tags#injection_resumethread"/>
+    <ccea:relatedTo rdf:resource="http://example.org/ccea-tags#injection_modifies_memory"/>
+    <ccea:relatedTo rdf:resource="http://example.org/ccea-tags#injection_ntsetcontextthread"/>
+    <ccea:relatedTo rdf:resource="http://example.org/ccea-tags#injection_runpe"/>
+    <ccea:relatedTo rdf:resource="http://example.org/ccea-tags#injection_write_memory_exe"/>
+    <ccea:relatedTo rdf:resource="http://example.org/ccea-tags#injection_createremotethread"/>
+    <ccea:relatedTo rdf:resource="http://example.org/ccea-tags#volatility_ldrmodules_1"/>
+    <ccea:relatedTo rdf:resource="http://example.org/ccea-tags#allocates_execute_remote_process"/>
+    <ccea:relatedTo rdf:resource="http://example.org/ccea-tags#volatility_handles_1"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ccea-tags#allocates_execute_remote_process">
+    <rdf:type rdf:resource="http://example.org/ccea-tags#Signature"/>
+    <rdfs:label>allocates_execute_remote_process</rdfs:label>
+    <ccea:inSwapPool rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</ccea:inSwapPool>
+    <ccea:hasTag rdf:resource="http://example.org/ccea-tags#E1055"/>
+    <ccea:relatedTo rdf:resource="http://example.org/ccea-tags#volatility_malfind_2"/>
+    <ccea:relatedTo rdf:resource="http://example.org/ccea-tags#injection_write_memory_exe"/>
+    <ccea:relatedTo rdf:resource="http://example.org/ccea-tags#volatility_ldrmodules_1"/>
+    <ccea:relatedTo rdf:resource="http://example.org/ccea-tags#injection_write_memory"/>
+    <ccea:relatedTo rdf:resource="http://example.org/ccea-tags#injection_modifies_memory"/>
+    <ccea:relatedTo rdf:resource="http://example.org/ccea-tags#injection_createremotethread"/>
+    <ccea:relatedTo rdf:resource="http://example.org/ccea-tags#injection_ntsetcontextthread"/>
+    <ccea:relatedTo rdf:resource="http://example.org/ccea-tags#volatility_handles_1"/>
+    <ccea:relatedTo rdf:resource="http://example.org/ccea-tags#injection_runpe"/>
+    <ccea:relatedTo rdf:resource="http://example.org/ccea-tags#injection_resumethread"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ccea-tags#pe_unknown_resource_name">
+    <rdf:type rdf:resource="http://example.org/ccea-tags#Signature"/>
+    <rdfs:label>pe_unknown_resource_name</rdfs:label>
+    <ccea:inSwapPool rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</ccea:inSwapPool>
+    <ccea:hasTag rdf:resource="http://example.org/ccea-tags#F0001"/>
+    <ccea:hasTag rdf:resource="http://example.org/ccea-tags#T1045"/>
+    <ccea:relatedTo rdf:resource="http://example.org/ccea-tags#pe_features"/>
+    <ccea:relatedTo rdf:resource="http://example.org/ccea-tags#peid_packer"/>
+    <ccea:relatedTo rdf:resource="http://example.org/ccea-tags#packer_entropy"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ccea-tags#T1203">
+    <rdf:type rdf:resource="http://example.org/ccea-tags#ATTCKTag"/>
+    <rdfs:label>T1203 Exploitation for Client Execution</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ccea-tags#injection_write_memory">
+    <rdf:type rdf:resource="http://example.org/ccea-tags#Signature"/>
+    <rdfs:label>injection_write_memory</rdfs:label>
+    <ccea:inSwapPool rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</ccea:inSwapPool>
+    <ccea:hasTag rdf:resource="http://example.org/ccea-tags#E1055"/>
+    <ccea:relatedTo rdf:resource="http://example.org/ccea-tags#volatility_malfind_2"/>
+    <ccea:relatedTo rdf:resource="http://example.org/ccea-tags#injection_modifies_memory"/>
+    <ccea:relatedTo rdf:resource="http://example.org/ccea-tags#injection_createremotethread"/>
+    <ccea:relatedTo rdf:resource="http://example.org/ccea-tags#volatility_ldrmodules_1"/>
+    <ccea:relatedTo rdf:resource="http://example.org/ccea-tags#allocates_execute_remote_process"/>
+    <ccea:relatedTo rdf:resource="http://example.org/ccea-tags#volatility_handles_1"/>
+    <ccea:relatedTo rdf:resource="http://example.org/ccea-tags#injection_runpe"/>
+    <ccea:relatedTo rdf:resource="http://example.org/ccea-tags#injection_resumethread"/>
+    <ccea:relatedTo rdf:resource="http://example.org/ccea-tags#injection_ntsetcontextthread"/>
+    <ccea:relatedTo rdf:resource="http://example.org/ccea-tags#injection_write_memory_exe"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ccea-tags#pe_features">
+    <rdf:type rdf:resource="http://example.org/ccea-tags#Signature"/>
+    <rdfs:label>pe_features</rdfs:label>
+    <ccea:inSwapPool rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</ccea:inSwapPool>
+    <ccea:hasTag rdf:resource="http://example.org/ccea-tags#F0001"/>
+    <ccea:hasTag rdf:resource="http://example.org/ccea-tags#T1045"/>
+    <ccea:relatedTo rdf:resource="http://example.org/ccea-tags#peid_packer"/>
+    <ccea:relatedTo rdf:resource="http://example.org/ccea-tags#packer_entropy"/>
+    <ccea:relatedTo rdf:resource="http://example.org/ccea-tags#pe_unknown_resource_name"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ccea-tags#ransomware_extensions">
+    <rdf:type rdf:resource="http://example.org/ccea-tags#Signature"/>
+    <rdfs:label>ransomware_extensions</rdfs:label>
+    <ccea:inSwapPool rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</ccea:inSwapPool>
+    <ccea:hasTag rdf:resource="http://example.org/ccea-tags#E1486"/>
+    <ccea:relatedTo rdf:resource="http://example.org/ccea-tags#ransomware_files"/>
+    <ccea:relatedTo rdf:resource="http://example.org/ccea-tags#ransomware_file_moves"/>
+    <ccea:relatedTo rdf:resource="http://example.org/ccea-tags#ransomware_appends_extensions"/>
+    <ccea:relatedTo rdf:resource="http://example.org/ccea-tags#ransomware_dropped_files"/>
+    <ccea:relatedTo rdf:resource="http://example.org/ccea-tags#ransomware_message"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ccea-tags#checks_debugger">
+    <rdf:type rdf:resource="http://example.org/ccea-tags#Signature"/>
+    <rdfs:label>checks_debugger</rdfs:label>
+    <ccea:inSwapPool rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</ccea:inSwapPool>
+    <ccea:hasTag rdf:resource="http://example.org/ccea-tags#B0001"/>
+    <ccea:relatedTo rdf:resource="http://example.org/ccea-tags#antidbg_windows"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ccea-tags#ransomware_appends_extensions">
+    <rdf:type rdf:resource="http://example.org/ccea-tags#Signature"/>
+    <rdfs:label>ransomware_appends_extensions</rdfs:label>
+    <ccea:inSwapPool rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</ccea:inSwapPool>
+    <ccea:hasTag rdf:resource="http://example.org/ccea-tags#C0015"/>
+    <ccea:hasTag rdf:resource="http://example.org/ccea-tags#E1486"/>
+    <ccea:relatedTo rdf:resource="http://example.org/ccea-tags#ransomware_message"/>
+    <ccea:relatedTo rdf:resource="http://example.org/ccea-tags#ransomware_extensions"/>
+    <ccea:relatedTo rdf:resource="http://example.org/ccea-tags#ransomware_file_moves"/>
+    <ccea:relatedTo rdf:resource="http://example.org/ccea-tags#ransomware_files"/>
+    <ccea:relatedTo rdf:resource="http://example.org/ccea-tags#ransomware_dropped_files"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ccea-tags#T1060">
+    <rdf:type rdf:resource="http://example.org/ccea-tags#ATTCKTag"/>
+    <rdfs:label>T1060 Registry Run Keys / Startup Folder</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ccea-tags#office_vuln_modules">
+    <rdf:type rdf:resource="http://example.org/ccea-tags#Signature"/>
+    <rdfs:label>office_vuln_modules</rdfs:label>
+    <ccea:inSwapPool rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</ccea:inSwapPool>
+    <ccea:hasTag rdf:resource="http://example.org/ccea-tags#E1203"/>
+    <ccea:hasTag rdf:resource="http://example.org/ccea-tags#T1203"/>
+    <ccea:relatedTo rdf:resource="http://example.org/ccea-tags#uses_windows_utilities"/>
+    <ccea:relatedTo rdf:resource="http://example.org/ccea-tags#sysinternals_tools_usage"/>
+    <ccea:relatedTo rdf:resource="http://example.org/ccea-tags#suspicious_command_tools"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ccea-tags#C0008">
+    <rdf:type rdf:resource="http://example.org/ccea-tags#MBCTag"/>
+    <rdfs:label>C0008 Change Memory Protection</rdfs:label>
+    <ccea:belongsToObjective rdf:resource="http://example.org/ccea-tags#Obj_Micro_behavior"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ccea-tags#locker_taskmgr">
+    <rdf:type rdf:resource="http://example.org/ccea-tags#Signature"/>
+    <rdfs:label>locker_taskmgr</rdfs:label>
+    <ccea:inSwapPool rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</ccea:inSwapPool>
+    <ccea:hasTag rdf:resource="http://example.org/ccea-tags#E1112"/>
+    <ccea:hasTag rdf:resource="http://example.org/ccea-tags#T1112"/>
+    <ccea:hasTag rdf:resource="http://example.org/ccea-tags#T1499"/>
+    <ccea:relatedTo rdf:resource="http://example.org/ccea-tags#disables_system_restore"/>
+    <ccea:relatedTo rdf:resource="http://example.org/ccea-tags#stealth_hiddenfile"/>
+    <ccea:relatedTo rdf:resource="http://example.org/ccea-tags#disables_security"/>
+    <ccea:relatedTo rdf:resource="http://example.org/ccea-tags#stealth_hidden_extension"/>
+    <ccea:relatedTo rdf:resource="http://example.org/ccea-tags#modify_uac_prompt"/>
+    <ccea:relatedTo rdf:resource="http://example.org/ccea-tags#persistence_autorun"/>
+    <ccea:relatedTo rdf:resource="http://example.org/ccea-tags#modifies_desktop_wallpaper"/>
+    <ccea:relatedTo rdf:resource="http://example.org/ccea-tags#disables_proxy"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ccea-tags#injection_write_memory_exe">
+    <rdf:type rdf:resource="http://example.org/ccea-tags#Signature"/>
+    <rdfs:label>injection_write_memory_exe</rdfs:label>
+    <ccea:inSwapPool rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</ccea:inSwapPool>
+    <ccea:hasTag rdf:resource="http://example.org/ccea-tags#E1055"/>
+    <ccea:relatedTo rdf:resource="http://example.org/ccea-tags#injection_runpe"/>
+    <ccea:relatedTo rdf:resource="http://example.org/ccea-tags#injection_resumethread"/>
+    <ccea:relatedTo rdf:resource="http://example.org/ccea-tags#volatility_malfind_2"/>
+    <ccea:relatedTo rdf:resource="http://example.org/ccea-tags#injection_write_memory"/>
+    <ccea:relatedTo rdf:resource="http://example.org/ccea-tags#injection_modifies_memory"/>
+    <ccea:relatedTo rdf:resource="http://example.org/ccea-tags#injection_createremotethread"/>
+    <ccea:relatedTo rdf:resource="http://example.org/ccea-tags#injection_ntsetcontextthread"/>
+    <ccea:relatedTo rdf:resource="http://example.org/ccea-tags#volatility_ldrmodules_1"/>
+    <ccea:relatedTo rdf:resource="http://example.org/ccea-tags#allocates_execute_remote_process"/>
+    <ccea:relatedTo rdf:resource="http://example.org/ccea-tags#volatility_handles_1"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ccea-tags#antiav_detectfile">
+    <rdf:type rdf:resource="http://example.org/ccea-tags#Signature"/>
+    <rdfs:label>antiav_detectfile</rdfs:label>
+    <ccea:inSwapPool rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</ccea:inSwapPool>
+    <ccea:hasTag rdf:resource="http://example.org/ccea-tags#T1063"/>
+    <ccea:hasTag rdf:resource="http://example.org/ccea-tags#T1083"/>
+    <ccea:hasTag rdf:resource="http://example.org/ccea-tags#T1518"/>
+    <ccea:relatedTo rdf:resource="http://example.org/ccea-tags#reads_user_agent"/>
+    <ccea:relatedTo rdf:resource="http://example.org/ccea-tags#antisandbox_cuckoo_files"/>
+    <ccea:relatedTo rdf:resource="http://example.org/ccea-tags#antiav_detectreg"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ccea-tags#E1105">
+    <rdf:type rdf:resource="http://example.org/ccea-tags#MBCTag"/>
+    <rdfs:label>E1105 Ingress Tool Transfer</rdfs:label>
+    <ccea:belongsToObjective rdf:resource="http://example.org/ccea-tags#Obj_Command_And_Control"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ccea-tags#dropper">
+    <rdf:type rdf:resource="http://example.org/ccea-tags#Signature"/>
+    <rdfs:label>dropper</rdfs:label>
+    <ccea:inSwapPool rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</ccea:inSwapPool>
+    <ccea:hasTag rdf:resource="http://example.org/ccea-tags#B0023"/>
+    <ccea:hasTag rdf:resource="http://example.org/ccea-tags#T1129"/>
+    <ccea:relatedTo rdf:resource="http://example.org/ccea-tags#malicious_document_urls"/>
+    <ccea:relatedTo rdf:resource="http://example.org/ccea-tags#creates_exe"/>
+    <ccea:relatedTo rdf:resource="http://example.org/ccea-tags#exe_appdata"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ccea-tags#T1129">
+    <rdf:type rdf:resource="http://example.org/ccea-tags#ATTCKTag"/>
+    <rdfs:label>T1129 Shared Modules</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ccea-tags#T1158">
+    <rdf:type rdf:resource="http://example.org/ccea-tags#ATTCKTag"/>
+    <rdfs:label>T1158 Hidden Files and Directories</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ccea-tags#recon_fingerprint">
+    <rdf:type rdf:resource="http://example.org/ccea-tags#Signature"/>
+    <rdfs:label>recon_fingerprint</rdfs:label>
+    <ccea:inSwapPool rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</ccea:inSwapPool>
+    <ccea:hasTag rdf:resource="http://example.org/ccea-tags#T1082"/>
+    <ccea:relatedTo rdf:resource="http://example.org/ccea-tags#antivm_memory_available"/>
+    <ccea:relatedTo rdf:resource="http://example.org/ccea-tags#raises_exception"/>
+    <ccea:relatedTo rdf:resource="http://example.org/ccea-tags#reads_user_agent"/>
+    <ccea:relatedTo rdf:resource="http://example.org/ccea-tags#applcation_raises_exception"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ccea-tags#creates_hidden_file">
+    <rdf:type rdf:resource="http://example.org/ccea-tags#Signature"/>
+    <rdfs:label>creates_hidden_file</rdfs:label>
+    <ccea:inSwapPool rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</ccea:inSwapPool>
+    <ccea:hasTag rdf:resource="http://example.org/ccea-tags#T1158"/>
+    <ccea:hasTag rdf:resource="http://example.org/ccea-tags#T1564"/>
+    <ccea:relatedTo rdf:resource="http://example.org/ccea-tags#stealth_hiddenfile"/>
+    <ccea:relatedTo rdf:resource="http://example.org/ccea-tags#stealth_hidden_extension"/>
+    <ccea:relatedTo rdf:resource="http://example.org/ccea-tags#stealth_window"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ccea-tags#wmi_antivm">
+    <rdf:type rdf:resource="http://example.org/ccea-tags#Signature"/>
+    <rdfs:label>wmi_antivm</rdfs:label>
+    <ccea:inSwapPool rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</ccea:inSwapPool>
+    <ccea:hasTag rdf:resource="http://example.org/ccea-tags#B0009"/>
+    <ccea:hasTag rdf:resource="http://example.org/ccea-tags#T1047"/>
+    <ccea:hasTag rdf:resource="http://example.org/ccea-tags#T1497"/>
+    <ccea:relatedTo rdf:resource="http://example.org/ccea-tags#ransomware_bcdedit"/>
+    <ccea:relatedTo rdf:resource="http://example.org/ccea-tags#antivm_vmware_in_instruction"/>
+    <ccea:relatedTo rdf:resource="http://example.org/ccea-tags#antivm_memory_available"/>
+    <ccea:relatedTo rdf:resource="http://example.org/ccea-tags#has_wmi"/>
+    <ccea:relatedTo rdf:resource="http://example.org/ccea-tags#antivm_disk_size"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ccea-tags#terminates_remote_process">
+    <rdf:type rdf:resource="http://example.org/ccea-tags#Signature"/>
+    <rdfs:label>terminates_remote_process</rdfs:label>
+    <ccea:inSwapPool rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</ccea:inSwapPool>
+    <ccea:hasTag rdf:resource="http://example.org/ccea-tags#C0018"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ccea-tags#E1112">
+    <rdf:type rdf:resource="http://example.org/ccea-tags#MBCTag"/>
+    <rdfs:label>E1112 Modify Registry</rdfs:label>
+    <ccea:belongsToObjective rdf:resource="http://example.org/ccea-tags#Obj_Defense_Evasion"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ccea-tags">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Ontology"/>
+    <rdfs:comment>Signature - tag - objective graph built from MITRE ATT&amp;CK, the Malware Behavior Catalog and Cuckoo signature files, covering the signatures the attack can swap (those with defense data and at least one tag). Tag E1478 (revoked mobile technique) is excluded. relatedTo is derived: two signatures that carry the same tag.</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ccea-tags#T1045">
+    <rdf:type rdf:resource="http://example.org/ccea-tags#ATTCKTag"/>
+    <rdfs:label>T1045 Software Packing</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ccea-tags#suspicious_process">
+    <rdf:type rdf:resource="http://example.org/ccea-tags#Signature"/>
+    <rdfs:label>suspicious_process</rdfs:label>
+    <ccea:inSwapPool rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</ccea:inSwapPool>
+    <ccea:hasTag rdf:resource="http://example.org/ccea-tags#C0017"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ccea-tags#process_interest">
+    <rdf:type rdf:resource="http://example.org/ccea-tags#Signature"/>
+    <rdfs:label>process_interest</rdfs:label>
+    <ccea:inSwapPool rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</ccea:inSwapPool>
+    <ccea:hasTag rdf:resource="http://example.org/ccea-tags#T1057"/>
+    <ccea:relatedTo rdf:resource="http://example.org/ccea-tags#antidbg_windows"/>
+    <ccea:relatedTo rdf:resource="http://example.org/ccea-tags#antisandbox_cuckoo_files"/>
+    <ccea:relatedTo rdf:resource="http://example.org/ccea-tags#injection_process_search"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ccea-tags#antiav_servicestop">
+    <rdf:type rdf:resource="http://example.org/ccea-tags#Signature"/>
+    <rdfs:label>antiav_servicestop</rdfs:label>
+    <ccea:inSwapPool rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</ccea:inSwapPool>
+    <ccea:hasTag rdf:resource="http://example.org/ccea-tags#F0004"/>
+    <ccea:hasTag rdf:resource="http://example.org/ccea-tags#T1031"/>
+    <ccea:hasTag rdf:resource="http://example.org/ccea-tags#T1089"/>
+    <ccea:relatedTo rdf:resource="http://example.org/ccea-tags#disables_proxy"/>
+    <ccea:relatedTo rdf:resource="http://example.org/ccea-tags#volatility_svcscan_3"/>
+    <ccea:relatedTo rdf:resource="http://example.org/ccea-tags#bypass_firewall"/>
+    <ccea:relatedTo rdf:resource="http://example.org/ccea-tags#modifies_firefox_configuration"/>
+    <ccea:relatedTo rdf:resource="http://example.org/ccea-tags#volatility_svcscan_1"/>
+    <ccea:relatedTo rdf:resource="http://example.org/ccea-tags#disables_security"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ccea-tags#injection_modifies_memory">
+    <rdf:type rdf:resource="http://example.org/ccea-tags#Signature"/>
+    <rdfs:label>injection_modifies_memory</rdfs:label>
+    <ccea:inSwapPool rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</ccea:inSwapPool>
+    <ccea:hasTag rdf:resource="http://example.org/ccea-tags#E1055"/>
+    <ccea:relatedTo rdf:resource="http://example.org/ccea-tags#injection_ntsetcontextthread"/>
+    <ccea:relatedTo rdf:resource="http://example.org/ccea-tags#volatility_ldrmodules_1"/>
+    <ccea:relatedTo rdf:resource="http://example.org/ccea-tags#allocates_execute_remote_process"/>
+    <ccea:relatedTo rdf:resource="http://example.org/ccea-tags#volatility_handles_1"/>
+    <ccea:relatedTo rdf:resource="http://example.org/ccea-tags#injection_runpe"/>
+    <ccea:relatedTo rdf:resource="http://example.org/ccea-tags#injection_resumethread"/>
+    <ccea:relatedTo rdf:resource="http://example.org/ccea-tags#injection_write_memory_exe"/>
+    <ccea:relatedTo rdf:resource="http://example.org/ccea-tags#volatility_malfind_2"/>
+    <ccea:relatedTo rdf:resource="http://example.org/ccea-tags#injection_write_memory"/>
+    <ccea:relatedTo rdf:resource="http://example.org/ccea-tags#injection_createremotethread"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ccea-tags#E1564">
+    <rdf:type rdf:resource="http://example.org/ccea-tags#MBCTag"/>
+    <rdfs:label>E1564 Hide Artifacts</rdfs:label>
+    <ccea:belongsToObjective rdf:resource="http://example.org/ccea-tags#Obj_Defense_Evasion"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ccea-tags#memdump_tor_urls">
+    <rdf:type rdf:resource="http://example.org/ccea-tags#Signature"/>
+    <rdfs:label>memdump_tor_urls</rdfs:label>
+    <ccea:inSwapPool rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</ccea:inSwapPool>
+    <ccea:hasTag rdf:resource="http://example.org/ccea-tags#T1090"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ccea-tags#T1112">
+    <rdf:type rdf:resource="http://example.org/ccea-tags#ATTCKTag"/>
+    <rdfs:label>T1112 Modify Registry</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ccea-tags#Obj_Persistence">
+    <rdf:type rdf:resource="http://example.org/ccea-tags#Objective"/>
+    <rdfs:label>Persistence</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ccea-tags#C0007">
+    <rdf:type rdf:resource="http://example.org/ccea-tags#MBCTag"/>
+    <rdfs:label>C0007 Allocate Memory</rdfs:label>
+    <ccea:belongsToObjective rdf:resource="http://example.org/ccea-tags#Obj_Micro_behavior"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ccea-tags#T1055">
+    <rdf:type rdf:resource="http://example.org/ccea-tags#ATTCKTag"/>
+    <rdfs:label>T1055 Process Injection</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ccea-tags#injection_runpe">
+    <rdf:type rdf:resource="http://example.org/ccea-tags#Signature"/>
+    <rdfs:label>injection_runpe</rdfs:label>
+    <ccea:inSwapPool rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</ccea:inSwapPool>
+    <ccea:hasTag rdf:resource="http://example.org/ccea-tags#E1055"/>
+    <ccea:relatedTo rdf:resource="http://example.org/ccea-tags#volatility_ldrmodules_1"/>
+    <ccea:relatedTo rdf:resource="http://example.org/ccea-tags#injection_write_memory"/>
+    <ccea:relatedTo rdf:resource="http://example.org/ccea-tags#injection_resumethread"/>
+    <ccea:relatedTo rdf:resource="http://example.org/ccea-tags#injection_modifies_memory"/>
+    <ccea:relatedTo rdf:resource="http://example.org/ccea-tags#injection_createremotethread"/>
+    <ccea:relatedTo rdf:resource="http://example.org/ccea-tags#injection_ntsetcontextthread"/>
+    <ccea:relatedTo rdf:resource="http://example.org/ccea-tags#allocates_execute_remote_process"/>
+    <ccea:relatedTo rdf:resource="http://example.org/ccea-tags#volatility_handles_1"/>
+    <ccea:relatedTo rdf:resource="http://example.org/ccea-tags#volatility_malfind_2"/>
+    <ccea:relatedTo rdf:resource="http://example.org/ccea-tags#injection_write_memory_exe"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ccea-tags#peid_packer">
+    <rdf:type rdf:resource="http://example.org/ccea-tags#Signature"/>
+    <rdfs:label>peid_packer</rdfs:label>
+    <ccea:inSwapPool rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</ccea:inSwapPool>
+    <ccea:hasTag rdf:resource="http://example.org/ccea-tags#F0001"/>
+    <ccea:hasTag rdf:resource="http://example.org/ccea-tags#T1045"/>
+    <ccea:relatedTo rdf:resource="http://example.org/ccea-tags#pe_features"/>
+    <ccea:relatedTo rdf:resource="http://example.org/ccea-tags#packer_entropy"/>
+    <ccea:relatedTo rdf:resource="http://example.org/ccea-tags#pe_unknown_resource_name"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ccea-tags#injection_process_search">
+    <rdf:type rdf:resource="http://example.org/ccea-tags#Signature"/>
+    <rdfs:label>injection_process_search</rdfs:label>
+    <ccea:inSwapPool rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</ccea:inSwapPool>
+    <ccea:hasTag rdf:resource="http://example.org/ccea-tags#T1057"/>
+    <ccea:relatedTo rdf:resource="http://example.org/ccea-tags#antidbg_windows"/>
+    <ccea:relatedTo rdf:resource="http://example.org/ccea-tags#antisandbox_cuckoo_files"/>
+    <ccea:relatedTo rdf:resource="http://example.org/ccea-tags#process_interest"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ccea-tags#F0012">
+    <rdf:type rdf:resource="http://example.org/ccea-tags#MBCTag"/>
+    <rdfs:label>F0012 Registry Run Keys / Startup Folder</rdfs:label>
+    <ccea:belongsToObjective rdf:resource="http://example.org/ccea-tags#Obj_Persistence"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ccea-tags#E1055">
+    <rdf:type rdf:resource="http://example.org/ccea-tags#MBCTag"/>
+    <rdfs:label>E1055 Process Injection</rdfs:label>
+    <ccea:belongsToObjective rdf:resource="http://example.org/ccea-tags#Obj_Defense_Evasion"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ccea-tags#T1088">
+    <rdf:type rdf:resource="http://example.org/ccea-tags#ATTCKTag"/>
+    <rdfs:label>T1088 Bypass User Account Control</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ccea-tags#reads_user_agent">
+    <rdf:type rdf:resource="http://example.org/ccea-tags#Signature"/>
+    <rdfs:label>reads_user_agent</rdfs:label>
+    <ccea:inSwapPool rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</ccea:inSwapPool>
+    <ccea:hasTag rdf:resource="http://example.org/ccea-tags#T1071"/>
+    <ccea:hasTag rdf:resource="http://example.org/ccea-tags#T1082"/>
+    <ccea:hasTag rdf:resource="http://example.org/ccea-tags#T1518"/>
+    <ccea:relatedTo rdf:resource="http://example.org/ccea-tags#antiav_detectfile"/>
+    <ccea:relatedTo rdf:resource="http://example.org/ccea-tags#recon_fingerprint"/>
+    <ccea:relatedTo rdf:resource="http://example.org/ccea-tags#applcation_raises_exception"/>
+    <ccea:relatedTo rdf:resource="http://example.org/ccea-tags#network_document_file"/>
+    <ccea:relatedTo rdf:resource="http://example.org/ccea-tags#antiav_detectreg"/>
+    <ccea:relatedTo rdf:resource="http://example.org/ccea-tags#antivm_memory_available"/>
+    <ccea:relatedTo rdf:resource="http://example.org/ccea-tags#raises_exception"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ccea-tags#applcation_raises_exception">
+    <rdf:type rdf:resource="http://example.org/ccea-tags#Signature"/>
+    <rdfs:label>applcation_raises_exception</rdfs:label>
+    <ccea:inSwapPool rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</ccea:inSwapPool>
+    <ccea:hasTag rdf:resource="http://example.org/ccea-tags#T1082"/>
+    <ccea:relatedTo rdf:resource="http://example.org/ccea-tags#antivm_memory_available"/>
+    <ccea:relatedTo rdf:resource="http://example.org/ccea-tags#reads_user_agent"/>
+    <ccea:relatedTo rdf:resource="http://example.org/ccea-tags#recon_fingerprint"/>
+    <ccea:relatedTo rdf:resource="http://example.org/ccea-tags#raises_exception"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ccea-tags#exe_appdata">
+    <rdf:type rdf:resource="http://example.org/ccea-tags#Signature"/>
+    <rdfs:label>exe_appdata</rdfs:label>
+    <ccea:inSwapPool rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</ccea:inSwapPool>
+    <ccea:hasTag rdf:resource="http://example.org/ccea-tags#B0023"/>
+    <ccea:hasTag rdf:resource="http://example.org/ccea-tags#T1129"/>
+    <ccea:relatedTo rdf:resource="http://example.org/ccea-tags#malicious_document_urls"/>
+    <ccea:relatedTo rdf:resource="http://example.org/ccea-tags#creates_exe"/>
+    <ccea:relatedTo rdf:resource="http://example.org/ccea-tags#dropper"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ccea-tags#T1490">
+    <rdf:type rdf:resource="http://example.org/ccea-tags#ATTCKTag"/>
+    <rdfs:label>T1490 Inhibit System Recovery</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ccea-tags#B0013">
+    <rdf:type rdf:resource="http://example.org/ccea-tags#MBCTag"/>
+    <rdfs:label>B0013 Analysis Tool Discovery</rdfs:label>
+    <ccea:belongsToObjective rdf:resource="http://example.org/ccea-tags#Obj_Discovery"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ccea-tags#uses_windows_utilities">
+    <rdf:type rdf:resource="http://example.org/ccea-tags#Signature"/>
+    <rdfs:label>uses_windows_utilities</rdfs:label>
+    <ccea:inSwapPool rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</ccea:inSwapPool>
+    <ccea:hasTag rdf:resource="http://example.org/ccea-tags#E1203"/>
+    <ccea:hasTag rdf:resource="http://example.org/ccea-tags#T1053"/>
+    <ccea:relatedTo rdf:resource="http://example.org/ccea-tags#suspicious_command_tools"/>
+    <ccea:relatedTo rdf:resource="http://example.org/ccea-tags#office_vuln_modules"/>
+    <ccea:relatedTo rdf:resource="http://example.org/ccea-tags#sysinternals_tools_usage"/>
+    <ccea:relatedTo rdf:resource="http://example.org/ccea-tags#persistence_autorun"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ccea-tags#ransomware_message">
+    <rdf:type rdf:resource="http://example.org/ccea-tags#Signature"/>
+    <rdfs:label>ransomware_message</rdfs:label>
+    <ccea:inSwapPool rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</ccea:inSwapPool>
+    <ccea:hasTag rdf:resource="http://example.org/ccea-tags#E1486"/>
+    <ccea:relatedTo rdf:resource="http://example.org/ccea-tags#ransomware_files"/>
+    <ccea:relatedTo rdf:resource="http://example.org/ccea-tags#ransomware_extensions"/>
+    <ccea:relatedTo rdf:resource="http://example.org/ccea-tags#ransomware_file_moves"/>
+    <ccea:relatedTo rdf:resource="http://example.org/ccea-tags#ransomware_appends_extensions"/>
+    <ccea:relatedTo rdf:resource="http://example.org/ccea-tags#ransomware_dropped_files"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ccea-tags#T1548">
+    <rdf:type rdf:resource="http://example.org/ccea-tags#ATTCKTag"/>
+    <rdfs:label>T1548 Abuse Elevation Control Mechanism</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ccea-tags#C0015">
+    <rdf:type rdf:resource="http://example.org/ccea-tags#MBCTag"/>
+    <rdfs:label>C0015 Alter File Extension</rdfs:label>
+    <ccea:belongsToObjective rdf:resource="http://example.org/ccea-tags#Obj_Micro_behavior"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ccea-tags#Objective">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label>MBC objective</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ccea-tags#privilege_luid_check">
+    <rdf:type rdf:resource="http://example.org/ccea-tags#Signature"/>
+    <rdfs:label>privilege_luid_check</rdfs:label>
+    <ccea:inSwapPool rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</ccea:inSwapPool>
+    <ccea:hasTag rdf:resource="http://example.org/ccea-tags#T1134"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ccea-tags#T1518">
+    <rdf:type rdf:resource="http://example.org/ccea-tags#ATTCKTag"/>
+    <rdfs:label>T1518 Software Discovery</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ccea-tags#T1063">
+    <rdf:type rdf:resource="http://example.org/ccea-tags#ATTCKTag"/>
+    <rdfs:label>T1063 Security Software Discovery</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ccea-tags#T1071">
+    <rdf:type rdf:resource="http://example.org/ccea-tags#ATTCKTag"/>
+    <rdfs:label>T1071 Application Layer Protocol</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ccea-tags#console_output">
+    <rdf:type rdf:resource="http://example.org/ccea-tags#Signature"/>
+    <rdfs:label>console_output</rdfs:label>
+    <ccea:inSwapPool rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</ccea:inSwapPool>
+    <ccea:hasTag rdf:resource="http://example.org/ccea-tags#T1059"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ccea-tags#protection_rx">
+    <rdf:type rdf:resource="http://example.org/ccea-tags#Signature"/>
+    <rdfs:label>protection_rx</rdfs:label>
+    <ccea:inSwapPool rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</ccea:inSwapPool>
+    <ccea:hasTag rdf:resource="http://example.org/ccea-tags#C0008"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ccea-tags#C0016">
+    <rdf:type rdf:resource="http://example.org/ccea-tags#MBCTag"/>
+    <rdfs:label>C0016 Create File</rdfs:label>
+    <ccea:belongsToObjective rdf:resource="http://example.org/ccea-tags#Obj_Micro_behavior"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ccea-tags#F0002">
+    <rdf:type rdf:resource="http://example.org/ccea-tags#MBCTag"/>
+    <rdfs:label>F0002 Keylogging</rdfs:label>
+    <ccea:belongsToObjective rdf:resource="http://example.org/ccea-tags#Obj_Collection"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ccea-tags#antidbg_windows">
+    <rdf:type rdf:resource="http://example.org/ccea-tags#Signature"/>
+    <rdfs:label>antidbg_windows</rdfs:label>
+    <ccea:inSwapPool rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</ccea:inSwapPool>
+    <ccea:hasTag rdf:resource="http://example.org/ccea-tags#B0001"/>
+    <ccea:hasTag rdf:resource="http://example.org/ccea-tags#B0013"/>
+    <ccea:hasTag rdf:resource="http://example.org/ccea-tags#T1057"/>
+    <ccea:relatedTo rdf:resource="http://example.org/ccea-tags#process_interest"/>
+    <ccea:relatedTo rdf:resource="http://example.org/ccea-tags#checks_debugger"/>
+    <ccea:relatedTo rdf:resource="http://example.org/ccea-tags#antisandbox_cuckoo_files"/>
+    <ccea:relatedTo rdf:resource="http://example.org/ccea-tags#injection_process_search"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ccea-tags#network_document_file">
+    <rdf:type rdf:resource="http://example.org/ccea-tags#Signature"/>
+    <rdfs:label>network_document_file</rdfs:label>
+    <ccea:inSwapPool rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</ccea:inSwapPool>
+    <ccea:hasTag rdf:resource="http://example.org/ccea-tags#E1105"/>
+    <ccea:hasTag rdf:resource="http://example.org/ccea-tags#T1071"/>
+    <ccea:relatedTo rdf:resource="http://example.org/ccea-tags#reads_user_agent"/>
+    <ccea:relatedTo rdf:resource="http://example.org/ccea-tags#creates_exe"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ccea-tags#B0007">
+    <rdf:type rdf:resource="http://example.org/ccea-tags#MBCTag"/>
+    <rdfs:label>B0007 Sandbox Detection</rdfs:label>
+    <ccea:belongsToObjective rdf:resource="http://example.org/ccea-tags#Obj_Anti_Behavioral_Analysis"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ccea-tags#F0007">
+    <rdf:type rdf:resource="http://example.org/ccea-tags#MBCTag"/>
+    <rdfs:label>F0007 Self Deletion</rdfs:label>
+    <ccea:belongsToObjective rdf:resource="http://example.org/ccea-tags#Obj_Defense_Evasion"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ccea-tags#E1203">
+    <rdf:type rdf:resource="http://example.org/ccea-tags#MBCTag"/>
+    <rdfs:label>E1203 Exploitation for Client Execution</rdfs:label>
+    <ccea:belongsToObjective rdf:resource="http://example.org/ccea-tags#Obj_Execution"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ccea-tags#antisandbox_sleep">
+    <rdf:type rdf:resource="http://example.org/ccea-tags#Signature"/>
+    <rdfs:label>antisandbox_sleep</rdfs:label>
+    <ccea:inSwapPool rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</ccea:inSwapPool>
+    <ccea:hasTag rdf:resource="http://example.org/ccea-tags#B0003"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ccea-tags#T1096">
+    <rdf:type rdf:resource="http://example.org/ccea-tags#ATTCKTag"/>
+    <rdfs:label>T1096 NTFS File Attributes</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ccea-tags#stealth_window">
+    <rdf:type rdf:resource="http://example.org/ccea-tags#Signature"/>
+    <rdfs:label>stealth_window</rdfs:label>
+    <ccea:inSwapPool rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</ccea:inSwapPool>
+    <ccea:hasTag rdf:resource="http://example.org/ccea-tags#T1143"/>
+    <ccea:hasTag rdf:resource="http://example.org/ccea-tags#T1564"/>
+    <ccea:relatedTo rdf:resource="http://example.org/ccea-tags#creates_hidden_file"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ccea-tags#Obj_Anti_Static_Analysis">
+    <rdf:type rdf:resource="http://example.org/ccea-tags#Objective"/>
+    <rdfs:label>Anti Static Analysis</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ccea-tags#volatility_modscan_1">
+    <rdf:type rdf:resource="http://example.org/ccea-tags#Signature"/>
+    <rdfs:label>volatility_modscan_1</rdfs:label>
+    <ccea:inSwapPool rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</ccea:inSwapPool>
+    <ccea:hasTag rdf:resource="http://example.org/ccea-tags#F0010"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ccea-tags#F0004">
+    <rdf:type rdf:resource="http://example.org/ccea-tags#MBCTag"/>
+    <rdfs:label>F0004 Disable or Evade Security Tools</rdfs:label>
+    <ccea:belongsToObjective rdf:resource="http://example.org/ccea-tags#Obj_Defense_Evasion"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ccea-tags#T1012">
+    <rdf:type rdf:resource="http://example.org/ccea-tags#ATTCKTag"/>
+    <rdfs:label>T1012 Query Registry</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ccea-tags#C0018">
+    <rdf:type rdf:resource="http://example.org/ccea-tags#MBCTag"/>
+    <rdfs:label>C0018 Terminate Process</rdfs:label>
+    <ccea:belongsToObjective rdf:resource="http://example.org/ccea-tags#Obj_Micro_behavior"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ccea-tags#T1059">
+    <rdf:type rdf:resource="http://example.org/ccea-tags#ATTCKTag"/>
+    <rdfs:label>T1059 Command and Scripting Interpreter</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ccea-tags#ransomware_bcdedit">
+    <rdf:type rdf:resource="http://example.org/ccea-tags#Signature"/>
+    <rdfs:label>ransomware_bcdedit</rdfs:label>
+    <ccea:inSwapPool rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</ccea:inSwapPool>
+    <ccea:hasTag rdf:resource="http://example.org/ccea-tags#T1047"/>
+    <ccea:hasTag rdf:resource="http://example.org/ccea-tags#T1490"/>
+    <ccea:relatedTo rdf:resource="http://example.org/ccea-tags#wmi_antivm"/>
+    <ccea:relatedTo rdf:resource="http://example.org/ccea-tags#has_wmi"/>
+    <ccea:relatedTo rdf:resource="http://example.org/ccea-tags#ransomware_shadowcopy"/>
+    <ccea:relatedTo rdf:resource="http://example.org/ccea-tags#disables_system_restore"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ccea-tags#modifies_boot_config">
+    <rdf:type rdf:resource="http://example.org/ccea-tags#Signature"/>
+    <rdfs:label>modifies_boot_config</rdfs:label>
+    <ccea:inSwapPool rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</ccea:inSwapPool>
+    <ccea:hasTag rdf:resource="http://example.org/ccea-tags#F0013"/>
+    <ccea:hasTag rdf:resource="http://example.org/ccea-tags#T1067"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ccea-tags#volatility_ldrmodules_1">
+    <rdf:type rdf:resource="http://example.org/ccea-tags#Signature"/>
+    <rdfs:label>volatility_ldrmodules_1</rdfs:label>
+    <ccea:inSwapPool rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</ccea:inSwapPool>
+    <ccea:hasTag rdf:resource="http://example.org/ccea-tags#E1055"/>
+    <ccea:relatedTo rdf:resource="http://example.org/ccea-tags#injection_write_memory_exe"/>
+    <ccea:relatedTo rdf:resource="http://example.org/ccea-tags#volatility_malfind_2"/>
+    <ccea:relatedTo rdf:resource="http://example.org/ccea-tags#injection_write_memory"/>
+    <ccea:relatedTo rdf:resource="http://example.org/ccea-tags#injection_modifies_memory"/>
+    <ccea:relatedTo rdf:resource="http://example.org/ccea-tags#injection_createremotethread"/>
+    <ccea:relatedTo rdf:resource="http://example.org/ccea-tags#injection_ntsetcontextthread"/>
+    <ccea:relatedTo rdf:resource="http://example.org/ccea-tags#allocates_execute_remote_process"/>
+    <ccea:relatedTo rdf:resource="http://example.org/ccea-tags#volatility_handles_1"/>
+    <ccea:relatedTo rdf:resource="http://example.org/ccea-tags#injection_runpe"/>
+    <ccea:relatedTo rdf:resource="http://example.org/ccea-tags#injection_resumethread"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ccea-tags#infostealer_keylogger">
+    <rdf:type rdf:resource="http://example.org/ccea-tags#Signature"/>
+    <rdfs:label>infostealer_keylogger</rdfs:label>
+    <ccea:inSwapPool rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</ccea:inSwapPool>
+    <ccea:hasTag rdf:resource="http://example.org/ccea-tags#F0002"/>
+    <ccea:hasTag rdf:resource="http://example.org/ccea-tags#F0003"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ccea-tags#T1053">
+    <rdf:type rdf:resource="http://example.org/ccea-tags#ATTCKTag"/>
+    <rdfs:label>T1053 Scheduled Task/Job</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ccea-tags#relatedTo">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#SymmetricProperty"/>
+    <rdfs:domain rdf:resource="http://example.org/ccea-tags#Signature"/>
+    <rdfs:range rdf:resource="http://example.org/ccea-tags#Signature"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ccea-tags#Obj_Command_And_Control">
+    <rdf:type rdf:resource="http://example.org/ccea-tags#Objective"/>
+    <rdfs:label>Command And Control</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ccea-tags#inSwapPool">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="http://example.org/ccea-tags#Signature"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ccea-tags#T1070">
+    <rdf:type rdf:resource="http://example.org/ccea-tags#ATTCKTag"/>
+    <rdfs:label>T1070 Indicator Removal</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ccea-tags#T1499">
+    <rdf:type rdf:resource="http://example.org/ccea-tags#ATTCKTag"/>
+    <rdfs:label>T1499 Endpoint Denial of Service</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ccea-tags#creates_doc">
+    <rdf:type rdf:resource="http://example.org/ccea-tags#Signature"/>
+    <rdfs:label>creates_doc</rdfs:label>
+    <ccea:inSwapPool rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</ccea:inSwapPool>
+    <ccea:hasTag rdf:resource="http://example.org/ccea-tags#C0016"/>
+    <ccea:relatedTo rdf:resource="http://example.org/ccea-tags#ransomware_files"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ccea-tags#Obj_Impact">
+    <rdf:type rdf:resource="http://example.org/ccea-tags#Objective"/>
+    <rdfs:label>Impact</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ccea-tags#E1059">
+    <rdf:type rdf:resource="http://example.org/ccea-tags#MBCTag"/>
+    <rdfs:label>E1059 Command and Scripting Interpreter</rdfs:label>
+    <ccea:belongsToObjective rdf:resource="http://example.org/ccea-tags#Obj_Execution"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ccea-tags#T1023">
+    <rdf:type rdf:resource="http://example.org/ccea-tags#ATTCKTag"/>
+    <rdfs:label>T1023 Shortcut Modification</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ccea-tags#hasTag">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:domain rdf:resource="http://example.org/ccea-tags#Signature"/>
+    <rdfs:range rdf:resource="http://example.org/ccea-tags#Tag"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ccea-tags#belongsToObjective">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:domain rdf:resource="http://example.org/ccea-tags#Tag"/>
+    <rdfs:range rdf:resource="http://example.org/ccea-tags#Objective"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ccea-tags#T1143">
+    <rdf:type rdf:resource="http://example.org/ccea-tags#ATTCKTag"/>
+    <rdfs:label>T1143 Hidden Window</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ccea-tags#allocates_rwx">
+    <rdf:type rdf:resource="http://example.org/ccea-tags#Signature"/>
+    <rdfs:label>allocates_rwx</rdfs:label>
+    <ccea:inSwapPool rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</ccea:inSwapPool>
+    <ccea:hasTag rdf:resource="http://example.org/ccea-tags#C0007"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ccea-tags#T1543">
+    <rdf:type rdf:resource="http://example.org/ccea-tags#ATTCKTag"/>
+    <rdfs:label>T1543 Create or Modify System Process</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ccea-tags#antiav_detectreg">
+    <rdf:type rdf:resource="http://example.org/ccea-tags#Signature"/>
+    <rdfs:label>antiav_detectreg</rdfs:label>
+    <ccea:inSwapPool rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</ccea:inSwapPool>
+    <ccea:hasTag rdf:resource="http://example.org/ccea-tags#T1012"/>
+    <ccea:hasTag rdf:resource="http://example.org/ccea-tags#T1063"/>
+    <ccea:hasTag rdf:resource="http://example.org/ccea-tags#T1518"/>
+    <ccea:relatedTo rdf:resource="http://example.org/ccea-tags#reads_user_agent"/>
+    <ccea:relatedTo rdf:resource="http://example.org/ccea-tags#antiav_detectfile"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ccea-tags#T1031">
+    <rdf:type rdf:resource="http://example.org/ccea-tags#ATTCKTag"/>
+    <rdfs:label>T1031 Modify Existing Service</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ccea-tags#T1497">
+    <rdf:type rdf:resource="http://example.org/ccea-tags#ATTCKTag"/>
+    <rdfs:label>T1497 Virtualization/Sandbox Evasion</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ccea-tags#T1089">
+    <rdf:type rdf:resource="http://example.org/ccea-tags#ATTCKTag"/>
+    <rdfs:label>T1089 Disabling Security Tools</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ccea-tags#T1083">
+    <rdf:type rdf:resource="http://example.org/ccea-tags#ATTCKTag"/>
+    <rdfs:label>T1083 File and Directory Discovery</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ccea-tags#T1054">
+    <rdf:type rdf:resource="http://example.org/ccea-tags#ATTCKTag"/>
+    <rdfs:label>T1054 Indicator Blocking</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ccea-tags#F0003">
+    <rdf:type rdf:resource="http://example.org/ccea-tags#MBCTag"/>
+    <rdfs:label>F0003</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ccea-tags#antivm_vmware_in_instruction">
+    <rdf:type rdf:resource="http://example.org/ccea-tags#Signature"/>
+    <rdfs:label>antivm_vmware_in_instruction</rdfs:label>
+    <ccea:inSwapPool rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</ccea:inSwapPool>
+    <ccea:hasTag rdf:resource="http://example.org/ccea-tags#B0009"/>
+    <ccea:relatedTo rdf:resource="http://example.org/ccea-tags#antivm_disk_size"/>
+    <ccea:relatedTo rdf:resource="http://example.org/ccea-tags#antivm_memory_available"/>
+    <ccea:relatedTo rdf:resource="http://example.org/ccea-tags#wmi_antivm"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ccea-tags#T1082">
+    <rdf:type rdf:resource="http://example.org/ccea-tags#ATTCKTag"/>
+    <rdfs:label>T1082 System Information Discovery</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ccea-tags#F0010">
+    <rdf:type rdf:resource="http://example.org/ccea-tags#MBCTag"/>
+    <rdfs:label>F0010 Kernel Modules and Extensions</rdfs:label>
+    <ccea:belongsToObjective rdf:resource="http://example.org/ccea-tags#Obj_Persistence"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ccea-tags#T1547">
+    <rdf:type rdf:resource="http://example.org/ccea-tags#ATTCKTag"/>
+    <rdfs:label>T1547 Boot or Logon Autostart Execution</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ccea-tags#B0001">
+    <rdf:type rdf:resource="http://example.org/ccea-tags#MBCTag"/>
+    <rdfs:label>B0001 Debugger Detection</rdfs:label>
+    <ccea:belongsToObjective rdf:resource="http://example.org/ccea-tags#Obj_Anti_Behavioral_Analysis"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ccea-tags#moves_self">
+    <rdf:type rdf:resource="http://example.org/ccea-tags#Signature"/>
+    <rdfs:label>moves_self</rdfs:label>
+    <ccea:inSwapPool rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</ccea:inSwapPool>
+    <ccea:hasTag rdf:resource="http://example.org/ccea-tags#E1564"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ccea-tags#Signature">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label>Cuckoo signature</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ccea-tags#Obj_Micro_behavior">
+    <rdf:type rdf:resource="http://example.org/ccea-tags#Objective"/>
+    <rdfs:label>Micro-behavior</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ccea-tags#Obj_Collection">
+    <rdf:type rdf:resource="http://example.org/ccea-tags#Objective"/>
+    <rdfs:label>Collection</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ccea-tags#Obj_Execution">
+    <rdf:type rdf:resource="http://example.org/ccea-tags#Objective"/>
+    <rdfs:label>Execution</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ccea-tags#T1090">
+    <rdf:type rdf:resource="http://example.org/ccea-tags#ATTCKTag"/>
+    <rdfs:label>T1090 Proxy</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ccea-tags#B0009">
+    <rdf:type rdf:resource="http://example.org/ccea-tags#MBCTag"/>
+    <rdfs:label>B0009 Virtual Machine Detection</rdfs:label>
+    <ccea:belongsToObjective rdf:resource="http://example.org/ccea-tags#Obj_Anti_Behavioral_Analysis"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ccea-tags#T1204">
+    <rdf:type rdf:resource="http://example.org/ccea-tags#ATTCKTag"/>
+    <rdfs:label>T1204 User Execution</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ccea-tags#T1067">
+    <rdf:type rdf:resource="http://example.org/ccea-tags#ATTCKTag"/>
+    <rdfs:label>T1067 Bootkit</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ccea-tags#T1564">
+    <rdf:type rdf:resource="http://example.org/ccea-tags#ATTCKTag"/>
+    <rdfs:label>T1564 Hide Artifacts</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ccea-tags#Tag">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label>MITRE tag</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ccea-tags#T1047">
+    <rdf:type rdf:resource="http://example.org/ccea-tags#ATTCKTag"/>
+    <rdfs:label>T1047 Windows Management Instrumentation</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ccea-tags#T1036">
+    <rdf:type rdf:resource="http://example.org/ccea-tags#ATTCKTag"/>
+    <rdfs:label>T1036 Masquerading</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ccea-tags#B0023">
+    <rdf:type rdf:resource="http://example.org/ccea-tags#MBCTag"/>
+    <rdfs:label>B0023 Install Additional Program</rdfs:label>
+    <ccea:belongsToObjective rdf:resource="http://example.org/ccea-tags#Obj_Execution"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ccea-tags#T1040">
+    <rdf:type rdf:resource="http://example.org/ccea-tags#ATTCKTag"/>
+    <rdfs:label>T1040 Network Sniffing</rdfs:label>
+  </rdf:Description>
+</rdf:RDF>
